@@ -10,7 +10,7 @@ Analysis of a UK High street retailer's data to extract insight on high value cu
 
 **Data**: Public ecommerce datasets such as thelook_ecommerce. Containing primarily order, product, customer and order items tables.
 
-**Methodology**: Use BigQuery or sql engine to join orders and product data. Calculate RFM scores for each customer to segment them into value tiers. Analyse retention trends across UK regions
+**Methodology**: Using Visual Studio Code and PostgreSQL to join orders and product data. Calculate RFM scores for each customer to segment them into value tiers. Analyse retention trends across UK regions
 
 **Outcome**: A ranked list of high‑value customers based on RFM scoring. Clear insight into which regions show the strongest retention and which require intervention. A dashboard that monitors customer health, identifies churn risks, and guides targeted marketing strategies.
 
