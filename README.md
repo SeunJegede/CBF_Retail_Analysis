@@ -1,5 +1,6 @@
 # CBF_Retail_Analysis
 Analysis of a UK High street retailer's data to extract insight on high value customers, their performance per region. This knowledge informs marketing investments/
+
 **UK High Street Business Analysis Proposal**
 
 **Scenario**: A UK high‑street retailer wants to improve customer retention and improve marketing efficiency. To do this, the business needs a better understanding of which customers deliver the most value and how it's different across regions. 
