@@ -2,12 +2,10 @@
 -- PostgreSQL database dump
 --
 
-\restrict CFkrhiT3edS77ixb6iSndiImP9q9FmcnVRrGeEOEkboxR7b7HBvlDtXvemRGa2D
+\restrict MTauYCGO3F6fbAGMRCWcf0SaqSPZS0nyZAsl1lsqCjhv4cgVj5uGrGXUOo34ldH
 
 -- Dumped from database version 16.11
 -- Dumped by pg_dump version 16.11
-
--- Started on 2026-02-18 15:56:59
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -25,7 +23,6 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- TOC entry 218 (class 1259 OID 16452)
 -- Name: order_items; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -47,7 +44,6 @@ CREATE TABLE public.order_items (
 ALTER TABLE public.order_items OWNER TO postgres;
 
 --
--- TOC entry 216 (class 1259 OID 16431)
 -- Name: orders; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -67,7 +63,6 @@ CREATE TABLE public.orders (
 ALTER TABLE public.orders OWNER TO postgres;
 
 --
--- TOC entry 217 (class 1259 OID 16443)
 -- Name: products; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -87,7 +82,6 @@ CREATE TABLE public.products (
 ALTER TABLE public.products OWNER TO postgres;
 
 --
--- TOC entry 215 (class 1259 OID 16407)
 -- Name: users; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -113,7 +107,6 @@ CREATE TABLE public.users (
 ALTER TABLE public.users OWNER TO postgres;
 
 --
--- TOC entry 4755 (class 2606 OID 16458)
 -- Name: order_items order_items_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -122,7 +115,6 @@ ALTER TABLE ONLY public.order_items
 
 
 --
--- TOC entry 4749 (class 2606 OID 16437)
 -- Name: orders orders_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -131,7 +123,6 @@ ALTER TABLE ONLY public.orders
 
 
 --
--- TOC entry 4751 (class 2606 OID 16449)
 -- Name: products products_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -140,7 +131,6 @@ ALTER TABLE ONLY public.products
 
 
 --
--- TOC entry 4753 (class 2606 OID 16451)
 -- Name: products products_sku_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -149,7 +139,6 @@ ALTER TABLE ONLY public.products
 
 
 --
--- TOC entry 4747 (class 2606 OID 16413)
 -- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -158,7 +147,6 @@ ALTER TABLE ONLY public.users
 
 
 --
--- TOC entry 4757 (class 2606 OID 16459)
 -- Name: order_items order_items_order_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -167,7 +155,6 @@ ALTER TABLE ONLY public.order_items
 
 
 --
--- TOC entry 4758 (class 2606 OID 16469)
 -- Name: order_items order_items_product_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -176,7 +163,6 @@ ALTER TABLE ONLY public.order_items
 
 
 --
--- TOC entry 4759 (class 2606 OID 16464)
 -- Name: order_items order_items_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -185,7 +171,6 @@ ALTER TABLE ONLY public.order_items
 
 
 --
--- TOC entry 4756 (class 2606 OID 16438)
 -- Name: orders orders_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -193,11 +178,9 @@ ALTER TABLE ONLY public.orders
     ADD CONSTRAINT orders_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id);
 
 
--- Completed on 2026-02-18 15:56:59
-
 --
 -- PostgreSQL database dump complete
 --
 
-\unrestrict CFkrhiT3edS77ixb6iSndiImP9q9FmcnVRrGeEOEkboxR7b7HBvlDtXvemRGa2D
+\unrestrict MTauYCGO3F6fbAGMRCWcf0SaqSPZS0nyZAsl1lsqCjhv4cgVj5uGrGXUOo34ldH
 
