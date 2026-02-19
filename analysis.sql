@@ -1,1 +1,1 @@
-SELECT * FROM O
+SELECT * FROM order_items;
