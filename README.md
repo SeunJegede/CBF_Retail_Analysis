@@ -19,25 +19,28 @@ Analysis of a UK High street retailer's data to extract insight on high value cu
 
 **How to run the project**
 
-1. Download the files to your local system
+1. Download the files to your local system.
 
-2. Open the files in your choice platform such as Visual Studio (Note: Syntax was written in psql)
+2. Open the files in your choice platform such as Visual Studio (Note: Syntax was written in psql).
 
-3. Create your schema by running the syntax in Schema.sql
+3. Create your schema by running the syntax in **Schema.sql**.
 
-4. Import your data from the csv tables using your graphical interface or the following psql command:
+4. Import your data for each table from the csv tables using your graphical interface or the following psql command:
 \copy retail.orders
 FROM '/c/Users/YourName/Desktop/orders.csv'
 DELIMITER ','
 CSV HEADER;
 
-Do that for each table
+**NB:** Data could not be uploaded becasue it is a large file. Sample data set can be gotten from: https://www.kaggle.com/code/chiraggivan82/thelook-ecommerce
 
-5. When all the data has been inserted into the 4 schemas, run the code from the data_cleaning.sql file to organize the data necessary for this analysis.
+**Only users, orders, products, and order_items table were used for this project**
 
-6. Finally, go to the analysis.sql fiel to create the final analysis table to use for visualization.
+5. When all the data has been inserted into the 4 schemas, run the code from the **data_cleaning.sql** file to organize the data necessary for this analysis.
 
-7. Still in the analysis.sql file, the code syntax to view state/region retention data is below the analysis table. Run this code to see table that clearly explains region retention.
+6. Finally, go to the **analysis.sql** file to create the final analysis table to use for visualization.
+
+7. Still in the **analysis.sql** file, the code syntax to view state/region retention data is below the analysis table. Run this code to see table that clearly explains region retention.
 
 **Note:** ERD Diagram is included in this repository for clear understanding of project structure
 
+**Project Visualisation Link:** https://lookerstudio.google.com/reporting/6c3cf36e-3ba2-40b4-9de8-6cdb30ad41f5
