@@ -11,8 +11,33 @@ Analysis of a UK High street retailer's data to extract insight on high value cu
 
 **Data**: Public ecommerce datasets such as thelook_ecommerce. Containing primarily order, product, customer and order items tables.
 
-**Methodology**: Using Visual Studio Code and PostgreSQL to join orders and product data. Calculate RFM scores for each customer to segment them into value tiers. Analyse retention trends across UK regions
+**Methodology**: Using Visual Studio Code and PostgreSQL to join orders and customer data. Calculate RFM scores for each customer to segment them into value tiers. Analyse retention trends across UK regions
 
 **Outcome**: A ranked list of high‑value customers based on RFM scoring. Clear insight into which regions show the strongest retention and which require intervention. A dashboard that monitors customer health, identifies churn risks, and guides targeted marketing strategies.
 
 **Ethics**: Use only publicly available or synthetic datasets to avoid exposing real customer information. Maintain transparency in modelling decisions to prevent biased customer segmentation. 
+
+**How to run the project**
+
+1. Download the files to your local system
+
+2. Open the files in your choice platform such as Visual Studio (Note: Syntax was written in psql)
+
+3. Create your schema by running the syntax in Schema.sql
+
+4. Import your data from the csv tables using your graphical interface or the following psql command:
+\copy retail.orders
+FROM '/c/Users/YourName/Desktop/orders.csv'
+DELIMITER ','
+CSV HEADER;
+
+Do that for each table
+
+5. When all the data has been inserted into the 4 schemas, run the code from the data_cleaning.sql file to organize the data necessary for this analysis.
+
+6. Finally, go to the analysis.sql fiel to create the final analysis table to use for visualization.
+
+7. Still in the analysis.sql file, the code syntax to view state/region retention data is below the analysis table. Run this code to see table that clearly explains region retention.
+
+**Note:** ERD Diagram is included in this repository for clear understanding of project structure
+
