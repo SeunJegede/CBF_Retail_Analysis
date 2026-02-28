@@ -52,7 +52,6 @@ CREATE TABLE products(
     distribution_center_id     INTEGER
 );
 
-
 -- create order items table
 CREATE TABLE order_items(
   	id                  INTEGER PRIMARY KEY,
