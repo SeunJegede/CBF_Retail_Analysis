@@ -9,13 +9,13 @@ Analysis of a UK High street retailer's data to extract insight on high value cu
 
 **Goal**: Identify high‑value customers using RFM (Recency, Frequency, Monetary) modelling and uncover patterns of retention per region to support targeted marketing and customer‑health reporting.
 
-**Data**: Public ecommerce datasets such as thelook_ecommerce. Containing primarily order, usrers and order items tables.
+**Data**: Public ecommerce datasets such as thelook_ecommerce. Containing primarily order, users and order items tables.
 
-**Methodology**: Using Visual Studio Code and PostgreSQL to join orders and customer data. Calculate RFM scores for each customer to segment them into value tiers. Analyse retention trends across UK regions
+**Methodology**: Using Visual Studio Code and PostgreSQL to join orders and customer data. Calculate RFM scores for each customer to segment them into value tiers. Analyse retention trends across UK regions.
 
 **Outcome**: A ranked list of high‑value customers based on RFM scoring. Clear insight into which regions show the strongest retention and which require intervention. A dashboard that monitors customer health, identifies churn risks, and guides targeted marketing strategies.
 
-**Ethics**: Use only publicly available or synthetic datasets to avoid exposing real customer information. Maintain transparency in modelling decisions to prevent biased customer segmentation. 
+**Ethics**: Used only publicly available or synthetic datasets to avoid exposing real customer information. Maintained transparency in modelling decisions to prevent biased customer segmentation. 
 
 **How to run the project**
 
